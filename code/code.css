@@ -1,0 +1,449 @@
+*{margin:0;padding: 0}
+body{
+    font: 12px "simhei", Arial, Helvetica, sans-serif;
+    color: #666;
+    background: #f5f5f5;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+}
+a{text-decoration: none;}
+/* header头部 */
+#top{
+    width: 1000px;
+    display: block;
+    margin: 50px auto 0;
+    min-height: 50px;
+}
+.lf{
+    float: left;
+}
+    #top_input{
+        position:relative;
+        margin-left: 40px;
+        margin-top: 3px;
+    }
+    #top_input #input{
+        width: 409px;
+        height: 36px;
+        padding: 10px;
+        outline: none;
+        border: 1px solid #0aa1ed;
+        background: #f5f5f5;
+        box-sizing:border-box;
+    }
+    .seek{
+        width: 97px;
+        height: 92px;
+        position: absolute;
+        top: 1px;
+        right: 36px;
+        font: 14px simhei;
+        padding-top: 8px;
+        cursor: pointer;
+        text-align: center;
+        color: #c3c3c3;
+      }
+    .actived{
+        width: 97px;
+        height: 26px;
+        position: absolute;
+        top: 8px;
+        right:0px;
+    }
+    .seek img{
+        position: relative;
+        top: -2px;
+    }
+    .rt{ 
+        float: right;
+    }
+    #top_input>a{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    #top_input #search{
+        width: 36px;
+        height: 35px;
+        position: relative;
+        top: 0px;
+        right: 0px;
+    }
+    ul.lf{
+        width: 128px;
+        height: 37px;
+    }
+    #top .rt ul li{
+        float: left;
+        padding: 2px 10px;
+        line-height: 33px;
+    }
+    #top .rt ul li b{
+        position: relative;
+        top: 0;
+        right: -10px;/* 细字体 */
+        font-weight: inherit;
+    }
+    #top .rt ul li img{vertical-align: middle}
+    #top .rt ul li a{
+        text-decoration: none;
+        color: #808080;
+    }
+     #top .rt ul li:last-child{
+        padding-right: 0;
+    } 
+    ul.lf.login_info{
+        width: 90px;
+        height: 37px;
+        float: left;
+    }
+     ul.lf.login_info li:last-child{
+        padding-right: 0;
+    } 
+    /* nav导航栏 */
+    #nav{
+        width: 1000px;
+        overflow: hidden;
+        margin: 0 auto;
+        display: block;
+        margin-top: 38px;
+        font-size: 16px;
+    }
+    #nav a{color: #ccc;}
+    #nav ul li{
+        float: left;
+        margin-right: 40px;
+    }
+    /* banner部分 */
+    .ck-slide{
+        width:1000px;
+        overflow: hidden;
+        margin: 20px auto 0px auto;
+        display: block;
+        height: 400px;
+        border: 1px solid #ddd;
+        position: relative;
+    }
+    .ck-slide-dir{position: relative}
+    .ck-slide ul.ck-slide-wrapper{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .ck-slide .ck-prev, .ck-slide .ck-next{
+        position: absolute;
+        top: 50%;
+        width: 35px;
+        height: 70px;
+        z-index: 999;
+        margin-top: -35px;
+        border-radius: 3px;
+    }
+    /* 上一张 */
+    .ctrl-slide.ck-prev{
+        right: 5px;
+        background:url(arrow-right.png) rgba(0,0,0,0.3) 50% no-repeat;
+    }
+    /* 下一张 */
+    .ctrl-slide.ck-next{
+        left: 5px;
+        background: url(arrow-left.png) rgba(0,0,0,0.3) 50% no-repeat;
+    }
+    /* banner上的点 */
+    .ck-slidebox{
+        width: 88px;
+        height: 20px;
+        position: absolute;
+        left: 50%;
+        bottom: 50px;
+        bottom: 5px;
+    }
+    .ck-slidebox ul{
+        width: 88px;
+        height: 20px;
+        float: left;
+        padding: 0 4px;
+        position: absolute;
+    }
+    .ck-slidebox ul li{
+        width: 12px;
+        height: 12px;
+        float: left;
+        border-radius: 50%;
+        background:#fff;
+        margin: 4px;
+    }
+    .ck-slidebox ul li:nth-child(2){
+        background: #0aa1ed;
+    }
+    .floor{
+        width: 1000px;
+        margin: 24px auto 0;
+        height: auto;
+    }
+    .floor_top{
+        font-size: 24px;
+        font-weight: bold;
+        border-bottom: 2px solid #d9d9d9;
+        padding-bottom: 4px;
+        margin-bottom: 10px;
+    }
+    .floor_top > img{
+        margin-bottom: -5px;
+        margin-right: 10px;
+    }
+    .floor_content>div{
+        float: left;
+        margin-bottom: 10px;
+        position: relative;
+        background: #e8e8e8;
+        overflow: hidden;
+    }
+    .floor_content>div:nth-child(1){
+        margin-right: 10px;
+        width: 609px;
+        height: 377px;
+    }
+    .floor_content>div:nth-child(2){
+        width: 381px;
+        height: 377px;
+    }
+    .floor_content>div:nth-child(3){
+        margin-right: 9px;
+        width: 377px;
+        height: 233px;   
+    }
+    .product{
+        width: 198px;
+        height: 235px;
+        text-align:center;
+        margin-right: 10px;
+    }
+    .floor_content>div:last-child{margin: 0}
+    .floor_content>div:nth-child(1)> .desc{
+        width: 245px;
+        height: 243px;
+        position: absolute;
+        top: 55px;
+        left: 65px;  
+    }
+    .floor_content>div:nth-child(1)>.desc>p.name{
+        font-size: 32px;
+        color: #333;
+    }
+    .floor_content>div:nth-child(1)>.desc>p.details{
+        font-size: 12px;
+        margin-bottom: 24px;
+    }
+    .floor_content>div:nth-child(1)>.desc>p.price{
+        font-size: 24px;
+        color: #0aa1ed;
+        margin-bottom: 12px;
+    }
+    .floor_content .view{
+        display: inline-block;
+        width: 130px;
+        height: 40px;
+        line-height: 40px;
+         background: linear-gradient(to top, #27b1f6 0%, #0aa1ed 100%);
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    .floor_content>div:nth-child(1) > img{
+        width: 390px;
+        height: 300px;
+        position: absolute;
+        top: 56px;
+        right: 30px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .floor_content>div:nth-child(2)>.desc{
+        width: 253px;
+        height: 211px;
+        position: absolute;
+        top: 63px;
+        left: 24px;
+    }
+    .floor_content > div:nth-child(2)>.desc>p.name{
+        font-size: 32px;
+        color: #333;
+    }
+    .floor_content>div:nth-child(2)>.desc>p.details{
+        font-size: 12px;
+        margin-bottom: 24px;
+    }
+    .floor_content>div:nth-child(2)>.desc>p.price{
+        font-size: 24px;
+        color: #0aa1ed;
+        margin-bottom: 12px;
+    }
+    .floor_content>div:nth-child(2)>img{
+        width: 292px;
+        height: 232px;
+        position: absolute;
+        bottom: 20px;
+        right: 25px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .floor_content>div:nth-child(3)> .desc{
+        width: 149px;
+        height: 119px;
+        position: absolute;
+        top: 21px;
+        left: 33px;
+        padding: 24px 0 0 0;
+    }
+    .floor_content>div:nth-child(3)>.desc>p.name{
+        font-size: 22px;
+        color: #333;
+    }
+    .floor_content>div:nth-child(3)>.desc>p.price{
+        font-size: 22px;
+        color: #0aa1ed;
+        margin-bottom: 12px;
+    }
+    .floor_content>div:nth-child(3)>img{
+        position: absolute;
+        top: 40px;
+        right: 17px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .product>img{
+        cursor: pointer;
+        transition: 1s;
+    }
+    .product>h2{
+        font-size: 12px;
+        color: #333;
+        font-weight: lighter;
+        text-align: center;
+    }
+    .product>p{
+        margin-top: 5px;
+        font-size: 24px;
+        color: #0aa1ed;
+        font-weight: bold;
+    }
+    .product>a{
+        padding: 6px 23px;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 2px;
+        background:linear-gradient(to bottom, #27b1f6 0%, #0aa1ed 100%);
+        position: absolute;
+        bottom: 10px;
+        left: 51px;
+    }
+    .floor:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .foot_box{
+        width: 1004px;
+        height: 82px;
+        margin: 43px auto 74px;
+        text-align: center;
+    }
+    .foot_box .icon1{
+        width: 65px;
+        height: 80px;
+        margin-left: 100px;
+    }
+    .foot_box h3{
+        font-weight: lighter;
+    }
+    .foot_box .icon2{
+        width: 65px;
+        height: 80px;
+        margin-left: 184px;
+        margin-right: 184px;
+    }
+    .foot_box .icon3{
+        width: 65px;
+        height: 80px;
+        margin-right: 184px;
+    }
+    .foot_box .icon4{
+        width: 65px;
+        height: 80px;
+    }
+    .foot_bj{background: #fff}
+    #foot {
+        width: 1000px;
+        margin: 0 auto;
+        padding-top: 62px;
+        font-family: "microsoft yahei";
+        background: #fff;
+        overflow: hidden;
+        color: black;
+        clear: both;
+      }
+    .footLogo {
+        margin-right: 92px;
+        padding-left: 20px;
+      }
+      #foot .footer2{
+          padding: 6px 50px 18px 20px;
+      }
+    
+      .foot_left {
+        float: left;
+      }
+      .foot_left ul {
+        float: left;
+        margin-right: 57px;
+        margin-bottom: 20px;
+      }
+      .foot_left ul li{
+        height: 26px;
+        text-align: center;
+      }
+      .foot_left ul li a{
+        color: #808080;
+        font: 12px simhei;
+        font-weight: inherit;
+    }
+    .foot_left ul li img{
+        margin-right: 4px;
+    }
+    .service p{
+        margin-bottom: 11px;
+        color: #333;
+        font:14px simhei;
+        font-weight: inherit;
+    }
+    #foot_left ul li a h3 {
+        color: #333;
+        font-size: 14px;
+        font: 14px simhei;
+        font-weight: inherit;
+      }
+    #foot .service {
+        float: left;
+        width: 125px;
+        text-align: center;
+        margin: 0 6px 20px 46px;
+      }
+    .service img{margin-bottom: 3px}
+    #foot .download{
+        float: left;
+        text-align: center;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+    .record{
+        text-align: center;
+        padding-bottom: 26px;
+        line-height: 26px;
+    }
